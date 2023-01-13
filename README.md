@@ -1,2 +1,5 @@
 # LFI
-Directory Transversal and file inclusion
+Validation:
+
+$file = basename(realpath($_GET['file']));
+include($file);
