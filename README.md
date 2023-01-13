@@ -7,11 +7,10 @@ The PHP function basename() will read the path and only return the filename port
 include($file);
 `
 
-***
 Santitization:
-while(substr_count($input, '../', 0)) {
+> while(substr_count($input, '../', 0)) {
+> 
+>     $input = str_replace('../', '', $input);
+>     
+> };
 
-    $input = str_replace('../', '', $input);
-    
-};
-***
