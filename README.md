@@ -8,6 +8,6 @@ The PHP function basename() will read the path and only return the filename port
 
 
 Santitization:
->while(substr_count($input, '../', 0)) {
->    $input = str_replace('../', '', $input);
->};
+``while(substr_count($input, '../', 0)) {
+    $input = str_replace('../', '', $input);
+};
