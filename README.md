@@ -8,9 +8,12 @@ include($file);
 `
 
 Santitization:
-> while(substr_count($input, '../', 0)) {
-> 
->     $input = str_replace('../', '', $input);
->     
-> };
+while(substr_count($input, '../', 0)) {
+    $input = str_replace('../', '', $input);
+};
 
+```
+git status
+git add
+git commit
+```
