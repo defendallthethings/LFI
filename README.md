@@ -12,5 +12,5 @@ Santitization:
 
     $input = str_replace('../', '', $input);
     
-};
-`
+};`
+
