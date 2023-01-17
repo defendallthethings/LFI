@@ -1,23 +1,23 @@
 # Sanitization:
 mysqli::real_escape_string -- mysqli_real_escape_string — Escapes special characters in a string for use in an SQL statement, taking into account the current charset of the connection
 ```
+
 <?php
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = new mysqli("localhost", "my_user", "my_password", "world");
+$mysqli = mysqli_connect("localhost", "my_user", "my_password", "world");
 
 $city = "'s-Hertogenbosch";
 
 /* this query with escaped $city will work */
 $query = sprintf("SELECT CountryCode FROM City WHERE name='%s'",
-    $mysqli->real_escape_string($city));
-$result = $mysqli->query($query);
-printf("Select returned %d rows.\n", $result->num_rows);
+    mysqli_real_escape_string($mysqli, $city));
+$result = mysqli_query($mysqli, $query);
+printf("Select returned %d rows.\n", mysqli_num_rows($result));
 
 /* this query will fail, because we didn't escape $city */
 $query = sprintf("SELECT CountryCode FROM City WHERE name='%s'", $city);
-$result = $mysqli->query($query);
-
+$result = mysqli_query($mysqli, $query);
  
 ```
  
