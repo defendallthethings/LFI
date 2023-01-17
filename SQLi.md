@@ -44,7 +44,7 @@ Query OK, 0 rows affected (0.000 sec)
 
 # Web Application Firewall
 
-WAFs can be open-source (ModSecurity) or premium (Cloudflare). 
+[WAFs can be open-source (ModSecurity) or premium (Cloudflare).](https://www.netnea.com/cms/apache-tutorial-6_embedding-modsecurity/) 
 
 # Parameterized Queries
 
