@@ -1,4 +1,4 @@
-#Lynis:
+# Lynis:
 
 ```
 git clone https://github.com/CISOfy/lynis.git
