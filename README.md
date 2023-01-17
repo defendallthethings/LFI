@@ -2,3 +2,4 @@
 - LFI
 - Automated Tools
 - SQLi
+- XSS
